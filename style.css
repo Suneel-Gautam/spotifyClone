@@ -8,7 +8,7 @@
 
 .left {
   width: 25vw;
-  padding: 10px;
+  padding: 10px 4px;
 }
 
 .right {
@@ -25,7 +25,7 @@
   font-weight: bold;
 }
 
-.library{
+.library {
   min-height: 80vh;
   position: relative;
 }
@@ -57,4 +57,65 @@
   font-size: 12px;
   color: gray;
   font-weight: 700;
+}
+
+.right {
+  margin: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #0e0e0e;
+  padding: 18px;
+}
+
+.spotifyPlaylist {
+  padding: 16px;
+}
+
+.cardContainer {
+  display: flex;
+  margin: 10px;
+}
+
+.spotifyPlaylist .card {
+  width: 250px;
+  padding: 16px;
+  background-color: #252525;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.spotifyPlaylist .card:hover .play {
+  top: 212px;
+  opacity: 1;
+}
+
+.card > * {
+  padding-top: 10px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+.play {
+  position: absolute;
+  top: 280px;
+  right: 20px;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.circle {
+  background-color: rgb(39, 218, 39);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0e0e0e;
 }
