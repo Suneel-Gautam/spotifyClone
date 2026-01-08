@@ -1,6 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .left {
@@ -12,15 +15,46 @@
   width: 75vw;
 }
 
-.home {
-    padding: 12px;
-
-}
-
 .home ul li {
   display: flex;
   align-items: center;
   gap: 15px;
   width: 18px;
   list-style: none;
+  padding-top: 18px;
+  font-weight: bold;
+}
+
+.library{
+  min-height: 80vh;
+  position: relative;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding-top: 12px;
+  list-style: none;
+  font-weight: bold;
+  align-items: center;
+  font-size: 12px;
+}
+
+.heading img {
+  width: 24px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer div {
+  font-size: 12px;
+  color: gray;
+  font-weight: 700;
 }
