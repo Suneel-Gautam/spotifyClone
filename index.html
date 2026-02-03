@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,6 +10,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
+
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="container flex bg-black">
@@ -55,8 +57,8 @@
           </div>
 
           <div class="buttons">
-            <button>Login</button>
-            <button>Signup</button>
+            <button class="signup">Signup</button>
+            <button class="login">Login</button>
           </div>
         </div>
 
@@ -75,7 +77,18 @@
               <h2>Happy Hits</h2>
               <p>Hits to Boost your Moood and full you with..</p>
             </div>
-          
+          </div>
+
+          <div class="playbar">
+            <div class="songinfo"></div>
+
+            <div class="songbuttons">
+              <img src="img/prevsong.svg" alt="" />
+              <img src="img/play.svg" alt="" />
+              <img src="img/nextsong.svg" alt="" />
+            </div>
+
+            <div class="songtime"></div>
           </div>
         </div>
       </div>

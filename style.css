@@ -9,7 +9,8 @@
 
 .left {
   width: 25vw;
-  padding: 20px 4px;
+  padding: 10px;
+  height: 100vh;
 }
 
 .right {
@@ -18,34 +19,47 @@
 .home {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+}
+.home .logo {
+  padding: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 0px 18px;
+  margin-bottom: 8px;
 }
 .home ul {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+}
+
+.home ul img {
+  width: 25px;
 }
 
 .home ul li {
+  cursor: pointer;
+  padding: 10px 18px;
   display: flex;
   align-items: center;
-  gap: 15px;
-  width: 18px;
+  gap: 14px;
   list-style: none;
   font-weight: bold;
 }
+.home ul li:hover {
+  background-color: rgb(64, 64, 64);
+}
 
 .library {
-  min-height: 80vh;
+  margin-top: 10px;
   position: relative;
+  padding: 18px;
+  min-height: 78vh;
 }
 
 .heading {
   display: flex;
-  align-items: center;
-  gap: 15px;
+  gap: 20px;
   width: 100%;
-  padding-top: 12px;
   list-style: none;
   font-weight: bold;
   align-items: center;
@@ -62,6 +76,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  margin-bottom: 20px;
 }
 .footer div {
   font-size: 12px;
@@ -71,18 +86,21 @@
 
 .right {
   margin: 10px;
+  position: relative;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
   background: #0e0e0e;
   padding: 18px;
 }
 
-.spotifyPlaylist {
-  padding: 16px;
+.spotifyPlaylist h1{
+  margin: 10px;
+
 }
 
 .cardContainer {
@@ -90,6 +108,8 @@
   flex-wrap: wrap;
   margin: 10px;
 }
+
+
 
 .spotifyPlaylist .card {
   width: 250px;
@@ -129,4 +149,56 @@
   justify-content: center;
   align-items: center;
   color: #0e0e0e;
+}
+
+.buttons > * {
+  margin: 0 12px;
+}
+
+.signup {
+  background: #0e0e0e;
+  color: #7d7d7d;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.signup:hover {
+  font-size: 17px;
+  color: white;
+  font-weight: bold;
+}
+
+.login {
+  background-color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  color: #0e0e0e;
+  padding: 10px;
+  width: 80px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.login:hover {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.playbar {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(117, 234, 117);
+  width: 100%;
+  padding: 12px;
+}
+
+.songbuttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
 }
