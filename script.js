@@ -12,7 +12,8 @@ async function getSongs() {
     if (element.href.endsWith(".mp3")) {
       songs.push(element.href);
     }
-  }g
+  }
+  g;
   return songs;
 }
 
@@ -22,8 +23,8 @@ async function main() {
 
   // play the first songs
 
-//   var audio = new Audio(songs[0]);
-//    audio.play();
+  //   var audio = new Audio(songs[0]);
+  //    audio.play();
 }
 
-main();  
+main();
