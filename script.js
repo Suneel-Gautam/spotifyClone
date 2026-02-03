@@ -10,16 +10,39 @@ async function getSongs() {
   for (let index = 0; index < as.length; index++) {
     const element = as[index];
     if (element.href.endsWith(".mp3")) {
-      songs.push(element.href);
+      songs.push(element.href.split("songs")[1]);
     }
   }
-  g;
   return songs;
 }
 
 async function main() {
   // get the songs
   let songs = await getSongs();
+
+  let Songul = document
+    .querySelector(".songList")
+    .getElementsByTagName("ul")[0];
+
+  for (const song of songs) {
+    Songul.innerHTML =
+      Songul.innerHTML +
+      `
+     <li>
+        <div class="music">
+         <img class="invert" src="img/music.svg" alt="" />
+           <div class="info">
+           <div>${song.replaceAll("%5C", " ").replaceAll("%20", " ")}</div>
+           <div>harry</div>
+            </div>
+           </div>
+           <div class="playnow">
+             <span>Play Now</span>
+             <img class="invert" src="img/play.svg" alt="playNow" />
+             </div>
+           </li>
+    `;
+  }
 
   // play the first songs
 
